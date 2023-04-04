@@ -349,8 +349,9 @@
 }
 
 * {
-    border: gray 0.5px solid;
+    border: solid pink 1px;
 }
+
 
 :root {
     font-family: Helvetica, Arial, sans-serif;
@@ -360,7 +361,6 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-color: rgb(255, 226, 173);
 }
 
 .banner {
@@ -369,7 +369,7 @@ body {
     justify-content: center;
     height: 100%;
     align-self: flex-start;
-    width: 30%;
+    width: 40%;
     background-image: url("./assets/shubham-dhage-24CMYIIt_QE-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -388,7 +388,27 @@ body {
 
 .main-form {
     display: flex;
-    justify-content: flex-start;
+    /* align-items: flex-end; */
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 20px
 }
+
+.form-row {
+    /* display: flex; */
+    position: relative;
+}
+
+.intro,
+.main-form,
+.log-in {
+    margin-left: 100px;
+}
+
+label {
+    font-size: 0.5rem;
+    position: absolute;
+    /* top: 20px; */
+    bottom: 30px;
+}
+
