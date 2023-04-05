@@ -348,9 +348,9 @@
     display: none;
 }
 
-* {
+/* * {
     border: solid pink 1px;
-}
+} */
 
 
 :root {
@@ -365,14 +365,13 @@ body {
 
 .banner {
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    align-self: flex-start;
     max-width: 45%;
     min-width: 30%;
     background-image: url("./assets/simon-lee-zft-W1kVEhg-unsplash.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: whitesmoke;
@@ -391,45 +390,55 @@ body {
   margin-top: 10px;
 }
 
+.banner > p {
+  position: absolute;
+  bottom: 0;
+  font-size: 0.6rem;
+  align-self: center;
+  font-weight: 100;
+}
+
+.banner > p > a {
+  color: white;
+}
+
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
-    /* align-items: flex-end; */
     background-color: rgb(247, 247, 247);
-    /* margin-left: 40px; */
+    width: 100%;
 }
 
 .intro {
-  width: 70%;
-  margin-left: 30px;
+  width: 65%;
+  margin-left: 60px;
 }
 
 .main-form {
     display: flex;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 700px;
+    /* max-width: 700px; */
     background-color: white;
-    gap: 20px;
-    justify-content: space-around;
 }
 
-.white {
+.form-background {
   background-color: white;
-  border: solid black 0.5px;
-  box-shadow: 10px;
   box-shadow: 5px 5px 5px gray;
+  padding: 20px 0px 20px 60px;
+
 }
 
 .main-form > h3 {
-  width: 91%;
-  /* margin-left: 10px; */
+  margin-bottom: 40px;
+  width: 100%;
+  font-size: 24px;
 }
 
 button {
-  margin: 40px;
+  margin: 30px 60px;
   background-color: rgb(58, 58, 253);
   color: white;
   border-radius: 10px;
@@ -440,30 +449,56 @@ button {
 
 .container {
     position: relative;
-    width: 40%;
-    margin-bottom: 27px;
+    width: 30%;
+    min-width: 200px;
+    margin-bottom: 40px;
+    margin-right: calc(40px + 0.4vw);
 }
 
 .container > input {
-  font-size: 20px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 0.4px solid gray;
+  width: 100%;
 }
 
 input::placeholder {
   color: rgb(218, 218, 218);
+  font-size: 16px;
 }
 
 
 
-label {
-    font-size: 0.5rem;
+.container > label {
+    font-size: 0.6rem;
     color: gray;
     position: absolute;
-    /* top: 20px; */
     bottom: 30px;
+    left: 5px;
     
 }
 
 .log-in {
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
+.log-in > a {
+  color: blue;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  .banner {
+    max-width: 100%;
+  }
+
+  .banner > p {
+    top: 0;
+    font-size: 0.4rem;
+  }
+}
