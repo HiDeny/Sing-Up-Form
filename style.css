@@ -488,7 +488,7 @@ input::placeholder {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   body {
     flex-direction: column;
   }
@@ -500,5 +500,17 @@ input::placeholder {
   .banner > p {
     top: 0;
     font-size: 0.4rem;
+  }
+
+  button {
+    margin: 30px auto;
+  }
+
+  .log-in {
+    margin: 0 auto;
+  }
+
+  .intro {
+    margin: 0 auto;
   }
 }
