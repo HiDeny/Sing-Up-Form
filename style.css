@@ -369,46 +369,101 @@ body {
     justify-content: center;
     height: 100%;
     align-self: flex-start;
-    width: 40%;
-    background-image: url("./assets/shubham-dhage-24CMYIIt_QE-unsplash.jpg");
+    max-width: 45%;
+    min-width: 30%;
+    background-image: url("./assets/simon-lee-zft-W1kVEhg-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: palevioletred;
     color: whitesmoke;
     text-align: center;
+}
+
+.banner > h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.banner > h3 {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 10px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    max-width: 100%;
+    /* align-items: flex-end; */
+    background-color: rgb(247, 247, 247);
+    /* margin-left: 40px; */
+}
+
+.intro {
+  width: 70%;
+  margin-left: 30px;
 }
 
 .main-form {
     display: flex;
-    /* align-items: flex-end; */
-    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
-    gap: 20px
+    max-width: 700px;
+    background-color: white;
+    gap: 20px;
+    justify-content: space-around;
 }
 
-.form-row {
-    /* display: flex; */
+.white {
+  background-color: white;
+  border: solid black 0.5px;
+  box-shadow: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+
+.main-form > h3 {
+  width: 91%;
+  /* margin-left: 10px; */
+}
+
+button {
+  margin: 40px;
+  background-color: rgb(58, 58, 253);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  border: none;
+}
+
+.container {
     position: relative;
+    width: 40%;
+    margin-bottom: 27px;
 }
 
-.intro,
-.main-form,
-.log-in {
-    margin-left: 100px;
+.container > input {
+  font-size: 20px;
 }
+
+input::placeholder {
+  color: rgb(218, 218, 218);
+}
+
+
 
 label {
     font-size: 0.5rem;
+    color: gray;
     position: absolute;
     /* top: 20px; */
     bottom: 30px;
+    
+}
+
+.log-in {
+  margin-left: 30px;
 }
 
