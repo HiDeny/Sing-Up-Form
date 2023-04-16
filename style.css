@@ -458,6 +458,14 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: rgb(36, 36, 255);
+}
+
+button:active {
+  background-color: rgb(118, 118, 254);
+}
+
 .container {
     position: relative;
     width: 30%;
