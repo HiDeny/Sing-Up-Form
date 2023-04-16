@@ -30,7 +30,7 @@
         </div>
         
         <div class="form-background">
-            <form action="" method="get" class="main-form">
+            <form action="#" method="get" class="main-form">
                 <h3>Let's do this!</h3>
                     <div class="container">
                         <label for="fname">FIRST NAME</label>
@@ -56,15 +56,18 @@
             
                     <div class="container">
                         <label for="pwd">PASSWORD</label>
-                        <input type="password" name="password" id="pwd" required>
+                        <input type="password" name="password" id="pwd" onkeyup="matchPassword()" required>
                     </div>
             
                     <div class="container">
                         <label for="cpwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="check-password" id="cpwd" required>
+                        <input type="password" name="check-password" id="cpwd" onkeyup="matchPassword()" required>
+
+                        <p id="alertPassword"></p>
                     </div>
+
         </div>
-                <button>Create Account</button>    
+                <button class="myButton">Create Account</button>    
             </form>
         
         <div class="log-in">
